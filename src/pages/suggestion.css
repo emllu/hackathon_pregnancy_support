@@ -1,0 +1,6 @@
+.hover\:move-up:hover {
+    transform: translateY(-10px); /* Move up by 8px */
+   /* Move up by 8px */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
