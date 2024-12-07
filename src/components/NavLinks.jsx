@@ -4,6 +4,7 @@ const links = [
   { id: 1, url: "/", text: "home" },
   { id: 2, url: "/login", text: "SignIn" },
   { id: 3, url: "/register", text: "Crate Account" },
+  { id: 3, url: "/insight", text: "Insight" },
   ,
 ];
 const Navlinks = () => {
