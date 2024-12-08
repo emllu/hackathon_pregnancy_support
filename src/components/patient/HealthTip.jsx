@@ -51,7 +51,7 @@ const PregnancyJoyHub = () => {
         {/* Pregnancy Journey Animation */}
         <div className="mb-6 text-center">
           <img 
-            src="https://via.placeholder.com/200" 
+            src="https://i.pinimg.com/474x/f2/68/c9/f268c90fb0b74aa11845e81b3cab40e6.jpg" 
             alt="Pregnancy Journey" 
             className="w-48 h-48 mx-auto rounded-full shadow-lg"
           />
@@ -60,7 +60,7 @@ const PregnancyJoyHub = () => {
 
         {/* Relaxing Daily Tasks Section */}
         <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-indigo-600 mb-4">Relaxing Daily Tasks</h3>
+          <h3 className="text-2xl font-semibold   text from-purple-300 to-pink-300  mb-4">Relaxing Daily Tasks</h3>
           <ul className="space-y-4">
             {wellnessData.tasks.map((task, index) => (
               <li key={index} className="flex items-center text-gray-700">
@@ -68,7 +68,7 @@ const PregnancyJoyHub = () => {
                   type="checkbox" 
                   checked={completedTasks.includes(task)} 
                   onChange={() => handleTaskCompletion(task)} 
-                  className="mr-3 w-6 h-6 rounded-full border-gray-300 text-indigo-600 focus:ring-indigo-500" 
+                  className="mr-3 w-6 h-6 rounded-full border-gray-300 text from-purple-300 to-pink-300  focus:ring-indigo-500" 
                 />
                 <span className={completedTasks.includes(task) ? "line-through text-gray-400" : "text-gray-700"}>{task}</span>
               </li>
@@ -78,10 +78,10 @@ const PregnancyJoyHub = () => {
 
         {/* Pregnancy Milestone Tracker */}
         <div className="mb-6">
-          <h3 className="text-2xl font-semibold text-indigo-600 mb-4">Your Pregnancy Milestones</h3>
-          <div className="p-6 bg-indigo-100 rounded-xl shadow-lg text-center">
-            <p className="text-xl font-semibold text-indigo-700">You are in Week 1!</p>
-            <p className="mt-2 text-gray-600">Every day is a new step in your beautiful journey.</p>
+          <h3 className="text-2xl font-semibold  text from-purple-300 to-pink-300  mb-4">Your Pregnancy Milestones</h3>
+          <div className="p-6 bg-gradient-to-r from-pink-300 to-indigo-200 rounded-xl shadow-lg text-center">
+            <p className="text-xl font-semibold text from-purple-300 to-pink-300 ">You are in Week 1!</p>
+            <p className="mt-2 text  from-purple-300 to-pink-300 ">Every day is a new step in your beautiful journey.</p>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ const PregnancyJoyHub = () => {
             <p className="text-xl font-semibold text-indigo-700">{currentAffirmation}</p>
             <button 
               onClick={changeAffirmation} 
-              className="mt-4 px-8 py-3 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300"
+              className="mt-4 px-8 py-3 bg-purple-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300"
             >
               Get New Affirmation
             </button>
@@ -106,7 +106,7 @@ const PregnancyJoyHub = () => {
             <p className="text-xl font-semibold text-indigo-700">{currentQuote}</p>
             <button 
               onClick={changeQuote} 
-              className="mt-4 px-8 py-3 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300"
+              className="mt-4 px-8 py-3 bg-purple-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition duration-300"
             >
               Get New Quote
             </button>
@@ -115,12 +115,7 @@ const PregnancyJoyHub = () => {
 
         {/* Music or Sound Options */}
         <div className="mb-6 text-center">
-          <button 
-            className="px-8 py-4 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-400 transition duration-300"
-            onClick={() => alert("Playing calming music...")}
-          >
-            Play Calming Music
-          </button>
+         
         </div>
       </div>
     </div>

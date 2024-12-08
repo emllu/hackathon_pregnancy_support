@@ -11,6 +11,7 @@ import Dashboard from "./components/doctorsdashboard/Dashboard";
 import Display from "./components/patient/display"
 import Notification from './components/patient/Notifications'
 import HealthTip from './components/patient/HealthTip'
+import BloodTypeInfoBox from "./components/patient/BloodType";
 const App = () => {
   const { isLoggedIn, userData } = useAuth(); 
 
@@ -24,6 +25,7 @@ const App = () => {
       <Route path="/display" element={<Display />} />
       <Route path="/notification" element={<Notification />} />
       <Route path="/health" element={<HealthTip />} />
+      <Route path="/blood" element={<BloodTypeInfoBox />} />
     </Routes>
   );
 };
