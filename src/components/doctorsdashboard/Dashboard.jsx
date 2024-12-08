@@ -1,4 +1,6 @@
 import React from 'react'
+import Sidebar from './Sidebar'
+import Profile from './Profile'
 
 const Dashboard = () => {
   return (

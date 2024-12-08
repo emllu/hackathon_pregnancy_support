@@ -1,7 +1,25 @@
 import React from "react";
 import { FaHospital, FaCalendarAlt, FaBell } from "react-icons/fa";
 
-const DoctorProfile = ({ doctor }) => {
+const doctor = {
+  User: {
+    name: "Dr. Sarah Thompson",
+    profilePicture: "https://via.placeholder.com/150",
+  },
+  specialty: "Cardiology",
+  hospitalName: "City General Hospital",
+  availability: "Monday to Friday, 9 AM - 5 PM",
+  Appointments: [
+    { patientName: "John Doe", date: "Dec 10, 2024, 2:30 PM" },
+    { patientName: "Jane Smith", date: "Dec 12, 2024, 10:00 AM" },
+  ],
+  notifications: [
+    { message: "Patient John Doe has updated his medical history.", date: "Dec 7, 2024" },
+    { message: "Your meeting with the board has been rescheduled.", date: "Dec 6, 2024" },
+  ],
+};
+
+const DoctorProfile = () => {
   return (
     <div className="bg-blue-300 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto space-y-8">

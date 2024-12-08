@@ -12,12 +12,14 @@ const Home = () => {
     <>
 
       <Navbar />
-     
-        <Banner />
+     <section className='align-element'>
+     <Banner />
         <OurServices />
         <AboutUs />
         <Doctors />
         <Suggestion/>
+     </section>
+        
        
     
       <Footer/>

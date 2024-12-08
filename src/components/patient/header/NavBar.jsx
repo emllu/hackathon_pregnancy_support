@@ -1,7 +1,7 @@
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
-import Navlinks from "./NavLinks";
+import Navlinks from "./NavLink";
 import { useEffect, useState } from "react";
 const themes = {
   dim: "dim",

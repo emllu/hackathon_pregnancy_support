@@ -1,11 +1,9 @@
 import { NavLink } from "react-router-dom";
 
 const links = [
-  { id: 1, url: "/", text: "home" },
-  { id: 2, url: "/login", text: "SignIn" },
-  { id: 3, url: "/register", text: "Crate Account" },
-  { id: 4, url: "/insight", text: "Insight" },
-  { id: 5, url: "/display", text: "display" },
+ { id: 1, url: "/insight", text: "Trimesters" },
+  { id: 2, url: "/notification", text: "Notifications" },
+  { id: 2, url: "/health", text: "My Health Tip" },
   ,
 ];
 const Navlinks = () => {
