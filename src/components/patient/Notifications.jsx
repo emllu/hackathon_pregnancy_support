@@ -56,12 +56,13 @@ const Countdown = ({ appointmentDate }) => {
 
 const Dashboard = () => {
   const [activeCategory, setActiveCategory] = useState("hormonalChanges"); // Default to "hormonalChanges"
+  console.log(activeCategory)
   const appointmentDate = new Date("2024-12-14T10:00:00");
   const trimester = "First Trimester"; // Example: You can set this dynamically or pass as prop
 
   // Find data for the selected trimester
   const selectedTrimester = pregnancyData.trimesters.find((t) => t.trimester === trimester);
-
+console.log(selectedTrimester)
   // Handle case when selectedTrimester is not found
   if (!selectedTrimester) {
     return <div>No data available for this trimester.</div>;

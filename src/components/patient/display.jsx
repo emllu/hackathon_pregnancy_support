@@ -5,7 +5,7 @@ import Footer from "../../pages/Footer";
 import NavBar from "./header/NavBar";
 import pregnancyWeeksData from "../data/weekdata"; 
 import BloodTypeInfoBox from "./BloodType";
-
+import CountDown from './../patient/WeekProgress'
 const Hero = () => {
   const [weeks, setWeeks] = useState(0); // Current week number
   const [date, setDate] = useState(new Date());
@@ -29,9 +29,9 @@ const Hero = () => {
             <h1 className="max-w-2xl text-xl font-semibold tracking-tight p-10 sm:text-5xl">
             Empowering Expectant Mothers and Providers for a Healthier Pregnancy Journey
           </h1>
-          <div>
-           
-            </div>
+          </div>
+              <div>
+           <CountDown/>
             </div>
           
         </div>

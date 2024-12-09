@@ -2,7 +2,7 @@ const pregnancyData = {
     trimesters: [
       {
         trimester: "First Trimester",
-        type: {
+    
           hormonalChanges: [
             {
               id: "firstTrimester-hormonal-1",
@@ -46,7 +46,7 @@ const pregnancyData = {
             },
           ],
         },
-      },
+      ,
       {
         trimester: "Second Trimester",
         hormonalChanges: [
